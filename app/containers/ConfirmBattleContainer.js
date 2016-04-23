@@ -11,9 +11,18 @@ var ConfirmBattleContainer = React.createClass({
       playersInfo: []
     };
   }
+  ,componentWillMount: function() {
+    console.log('Console will mount');
+  }
+  ,componentWillUnount: function() {
+    console.log('Console will unmount');
+  }
+  ,componentWillReceiveProps: function() {
+    console.log('Console will receive props');
+  }
   ,componentDidMount: function() {
     var query = this.props.location.query;
-    // console.log(query);
+    console.log('Console did mount');
   }
   ,render: function()  {
     return (

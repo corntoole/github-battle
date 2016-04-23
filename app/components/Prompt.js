@@ -2,7 +2,7 @@ var React = require('react');
 var transparentBg = require('../styles').transparentBg;
 var PropTypes = React.PropTypes;
 
-var Prompt = function (props) {
+function Prompt (props) {
   return (
     <div className="jumbotron col-sm-6 col-sm-offset-3 text-center" style={transparentBg}>
       <h1>{props.header}</h1>

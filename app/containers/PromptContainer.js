@@ -1,6 +1,6 @@
 var React = require('react');
 
-var Prompt = require('./Prompt');
+var Prompt = require('../components/Prompt');
 
 
 var PromptContainer = React.createClass({
@@ -27,7 +27,7 @@ var PromptContainer = React.createClass({
     if (this.props.routeParams.playerOne) {
       // go to /battle
       this.context.router.push({
-        pathName: '/battle',
+        pathname: '/battle',
         query: {
           playerOne: this.props.routeParams.playerOne,
           playerTwo: this.state.username,
